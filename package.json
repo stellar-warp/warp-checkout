@@ -1,0 +1,38 @@
+{
+  "name": "warp-checkout",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "async": "^2.6.0",
+    "bluebird": "^3.5.1",
+    "classnames": "^2.2.5",
+    "clear-sans-webfont": "^1.1.1",
+    "html-webpack-plugin": "^2.30.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "semantic-ui-css": "^2.2.14",
+    "semantic-ui-react": "^0.77.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify-css": "^0.14.0",
+    "react-scripts": "^1.1.0",
+    "reactify": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build-react": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "build": "browserify src/checkout.js -o public/checkout.js -t browserify-css -t [ babelify --presets [ env ] ]"
+  }
+}
